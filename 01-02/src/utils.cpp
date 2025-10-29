@@ -11,7 +11,10 @@ bool checkBrackets(std::string x) {
             if (v == OPENING_CURLY_BRACKET) stack.push(CLOSING_CURLY_BRACKET);
             else if (v == OPENING_BRACKET) stack.push(CLOSING_BRACKET);
             else if (v == OPENING_SQUARE_BRACKET) stack.push(CLOSING_SQUARE_BRACKET);
-            else if (CLOSING_BRACKETS.find(v) != std::string::npos && v == stack.peek()) stack.pop();
+            else if (CLOSING_BRACKETS.find(v) != std::string::npos) {
+                if (v == stack.peek()) stack.pop();
+                else return false;
+            }
         }
     } catch (const std::out_of_range& e) { return false; }
     if (!stack.isEmpty()) return false;

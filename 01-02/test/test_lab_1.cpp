@@ -25,6 +25,7 @@ void tests() {
     test_data["[({})"] = false;
     test_data["([]{})"] = true;
     test_data["([}{])"] = false;
+    test_data["((}))"] = false;
     test_data[""] = true;
     test_data["(((((((((())))))))))"] = true;
     test_data["{[()()[]{}()]}"] = true;
