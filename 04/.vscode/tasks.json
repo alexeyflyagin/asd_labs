@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Release",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-I", "include",
+                "-g",
+                "src/main.cpp",
+                "src/sort_algorithms.cpp",
+                "src/utils.cpp",
+                "-o",
+                "${workspaceFolder}/app.exe",
+                "-std=c++17"
+            ],
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+            },
+        },
+        {
+            "type": "cppbuild",
+            "label": "Test",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-I", "include",
+                "-g",
+                "test/test.cpp",
+                "src/sort_algorithms.cpp",
+                "src/utils.cpp",
+                "-o",
+                "${workspaceFolder}/app.exe",
+                "-std=c++17"
+            ],
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+            },
+        }
+    ]
+}
