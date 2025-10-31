@@ -12,7 +12,7 @@ int main() {
     std::vector<double> arr;
     fillVector(arr);
 
-    arr = lab4::sort(arr);
+    arr = lab5::sort(arr);
     printVector(arr);
 
     return 1;
