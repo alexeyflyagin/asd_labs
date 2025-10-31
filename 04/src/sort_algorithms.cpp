@@ -61,3 +61,21 @@ namespace lab6 {
         return arr;
     }
 }
+
+namespace lab7 {
+    std::vector<double> sort(std::vector<double> arr) {
+        for (int gap = arr.size() / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < arr.size(); i++) {
+                int temp = arr[i];
+                int pointer = i - gap;
+                while (pointer >= 0 && arr[pointer] > temp) {
+                    arr[pointer + gap] = arr[pointer];
+                    pointer -= gap;
+                }
+                arr[pointer + gap] = temp;
+            }
+        }
+
+        return arr;
+    }
+}
