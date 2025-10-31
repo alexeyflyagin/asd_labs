@@ -44,3 +44,20 @@ namespace lab5 {
         return arr;
     }
 }
+
+namespace lab6 {
+    std::vector<double> sort(std::vector<double> arr) {
+        int min_pointer;
+
+        for (int i = 0; i < arr.size(); ++i) {
+            min_pointer = i;
+            for (int k = i + 1; k < arr.size(); ++k) {
+                if (arr[k] >= arr[min_pointer]) continue;
+                min_pointer = k;
+            }
+            swap(arr[i], arr[min_pointer]);
+        }
+
+        return arr;
+    }
+}

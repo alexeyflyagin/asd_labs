@@ -8,3 +8,7 @@ namespace lab4 {
 namespace lab5 {
     std::vector<double> sort(std::vector<double> arr);
 }
+
+namespace lab6 {
+    std::vector<double> sort(std::vector<double> arr);
+}

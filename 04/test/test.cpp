@@ -21,6 +21,6 @@ void test(std::vector<double> (*func)(std::vector<double>)) {
 }
 
 int main() {
-    test(lab5::sort);
+    test(lab6::sort);
     return 1;
 }
