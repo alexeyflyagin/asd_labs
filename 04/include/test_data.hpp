@@ -6,6 +6,8 @@ inline const std::vector<std::vector<double>> test_arrs {
     std::vector<double> {3.14},
     std::vector<double> {2.718, 2.718, 2.718, 2.718, 2.718},
     std::vector<double> {1.1, 2.2, 3.3, 4.4, 5.5},
+    std::vector<double> {1.1, 2.2, 3.3, 4.4, 5.5},
+    std::vector<double> {2, 3, 5, 1, 0, 5, 19, 4},
     std::vector<double> {5.5, 4.4, 3.3, 2.2, 1.1},
     std::vector<double> {1.1, 2.2, 5.5, 4.4, 3.3, 6.6, 7.7},
     std::vector<double> {3.3, 1.1, 2.2, 3.3, 4.4, 2.2, 1.1, 3.3},
